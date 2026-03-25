@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quote Generator</title>
+</head>
+<body>
+
+  <h1>Random Quote Generator</h1>
+  <button onclick="generateQuote()">Get Quote</button>
+
+  <p id="quote"></p>
+
+  <script>
+    const quotes = [
+      "Stay consistent.",
+      "Discipline beats motivation.",
+      "Small steps every day.",
+      "Focus on progress, not perfection."
+    ];
+
+    function generateQuote() {
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote").innerText = quotes[random];
+    }
+  </script>
+
+</body>
+</html>
